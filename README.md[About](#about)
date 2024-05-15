@@ -1,0 +1,47 @@
+Sentiment Analysis with TextBlob
+
+This repository contains code for performing sentiment analysis on movie reviews using the TextBlob library in Python.
+
+Overview
+
+The main steps in the sentiment analysis process are:
+
+1. Load and preprocess the data
+   - Handle missing values
+   - Remove HTML tags and escape sequences
+   - Remove punctuation
+   - Convert text to lowercase
+
+2. Remove stopwords
+   - Use the NLTK stopwords corpus
+   - Customize the stopword list by removing 'no' and 'not'
+
+3. Perform sentiment analysis using TextBlob
+   - Calculate the polarity score for each review
+   - Map the polarity score to a binary sentiment label (positive or negative)
+
+4. Evaluate the model
+   - Calculate accuracy, precision, recall, and F1-score
+
+Requirements
+
+- Python 3.x
+- pandas
+- numpy
+- nltk
+- textblob
+
+Usage
+
+1. Install the required packages:
+
+pip install -r requirements.txt
+
+Results
+The sentiment analysis model achieves an accuracy of approximately 80% on the movie review dataset.
+
+Data Source
+1. Data Set took from Kaggle - https://www.kaggle.com/datasets/columbine/imdb-dataset-sentiment-analysis-in-csv-format
+2. Understanding the conecpt from Great Learning - https://www.mygreatlearning.com/academy/courses/9869177/31733
+
+If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
